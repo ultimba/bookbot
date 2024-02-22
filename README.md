@@ -1,2 +1,2 @@
 # bookbot
-boot.dev bookbot project
+boot.dev BookBot project - creating a project and maintaining it via Git
