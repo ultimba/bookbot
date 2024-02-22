@@ -15,15 +15,15 @@ def book_Text(book_location):
         book_contents = f.read()
         return book_contents
 
+# Count the number of words in a book
 def word_Count(book):
-    # Count the number of words in a book
     count = 0
     words = book.split()
     for word in words:
-        #print(word)
         count +=1
     return count
 
+# Create a dictionary of the number of each letter in the book
 def letter_Count(book):
     alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p',
     'q','r','s','t','u','v','w','x','y','z']
@@ -35,12 +35,13 @@ def letter_Count(book):
         for c in lowered_book:
             if c == a:
                 letters[a] += 1
-        #print (a, letters[a])
     return letters
 
+# sorts a passed in dictionary on the num value
 def sort_on(dictionary):
     return dictionary["num"]
 
+# takes a dictionary and puts the entries into a list - the list is then sorted using sort_on
 def sort_dictionary(dictionary):
     sorted_list = []
     for entry in dictionary:
